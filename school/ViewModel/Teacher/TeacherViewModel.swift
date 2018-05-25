@@ -14,10 +14,10 @@ class TeacherViewModel {
     var name: String!
     var matter: String!
     
-    init(dataTeacher: Teacher) {
-        self.avatar = dataTeacher.avatar
-        self.name = dataTeacher.name
-        self.matter = dataTeacher.matter
+    init(teacher: Teacher) {
+        self.avatar = teacher.avatar
+        self.name = teacher.name
+        self.matter = teacher.matter
     }
     
 }

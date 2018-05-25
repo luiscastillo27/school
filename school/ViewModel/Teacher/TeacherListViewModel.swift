@@ -22,7 +22,7 @@ class TeacherListViewModel{
     private func getTeachers(){
         let teachers = self.dataTeacher.getTeachers()
         self.teachersViewModel = teachers.map{ teacher in
-            return TeacherViewModel(dataTeacher: teacher)
+            return TeacherViewModel(teacher: teacher)
         }
     }
     
