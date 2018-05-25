@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-sanus" translatesAutoresizingMaskIntoConstraints="NO" id="UyF-ca-cpD">
-                                <rect key="frame" x="79.5" y="220" width="161" height="128"/>
+                                <rect key="frame" x="79.5" y="220" width="161" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="161" id="PKa-NZ-lqB"/>
-                                    <constraint firstAttribute="height" constant="128" id="Z6Z-wa-Sve"/>
+                                    <constraint firstAttribute="height" constant="127" id="Z6Z-wa-Sve"/>
                                 </constraints>
                             </imageView>
                         </subviews>
