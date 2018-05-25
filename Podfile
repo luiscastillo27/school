@@ -14,13 +14,11 @@ target 'school' do
   pod 'Firebase/Storage'
   pod 'Firebase/Messaging'
   pod 'GoogleSignIn'
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
-  pod 'FacebookShare'
   pod 'SDWebImage'
   pod 'RevealingSplashView'
   pod 'SwiftyJSON'
   pod 'Alamofire'
+
 
   target 'schoolTests' do
     inherit! :search_paths
