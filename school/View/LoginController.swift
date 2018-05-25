@@ -20,6 +20,7 @@ class LoginController: UIViewController {
         self.view.addSubview(revealingSplashView)
         self.revealingSplashView.animationType = SplashAnimationType.popAndZoomOut
         self.revealingSplashView.startAnimation()
+        //self.view.bindKeyboard()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
