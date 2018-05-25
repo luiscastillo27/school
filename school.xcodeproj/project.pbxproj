@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2CC7BBB24C56AE07C14593CA /* Pods_school.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9E382CFC49DA162B85217C /* Pods_school.framework */; };
 		840DB06420B7580800A4AD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB06320B7580800A4AD84 /* AppDelegate.swift */; };
-		840DB06620B7580800A4AD84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB06520B7580800A4AD84 /* ViewController.swift */; };
+		840DB06620B7580800A4AD84 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB06520B7580800A4AD84 /* LoginController.swift */; };
 		840DB06920B7580800A4AD84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DB06720B7580800A4AD84 /* Main.storyboard */; };
 		840DB06B20B7581000A4AD84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840DB06A20B7581000A4AD84 /* Assets.xcassets */; };
 		840DB06E20B7581000A4AD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DB06C20B7581000A4AD84 /* LaunchScreen.storyboard */; };
@@ -43,7 +43,7 @@
 		6FBBB96B4EE3889F61B57815 /* Pods-schoolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schoolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-schoolTests/Pods-schoolTests.release.xcconfig"; sourceTree = "<group>"; };
 		840DB06020B7580800A4AD84 /* school.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = school.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840DB06320B7580800A4AD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840DB06520B7580800A4AD84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840DB06520B7580800A4AD84 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		840DB06820B7580800A4AD84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840DB06A20B7581000A4AD84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840DB06D20B7581000A4AD84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				840DB06320B7580800A4AD84 /* AppDelegate.swift */,
-				840DB06520B7580800A4AD84 /* ViewController.swift */,
+				840DB06520B7580800A4AD84 /* LoginController.swift */,
 				840DB06720B7580800A4AD84 /* Main.storyboard */,
 				840DB06A20B7581000A4AD84 /* Assets.xcassets */,
 				840DB06C20B7581000A4AD84 /* LaunchScreen.storyboard */,
@@ -424,7 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840DB06620B7580800A4AD84 /* ViewController.swift in Sources */,
+				840DB06620B7580800A4AD84 /* LoginController.swift in Sources */,
 				840DB06420B7580800A4AD84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,7 +603,10 @@
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = school/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iwebsapp.school;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -620,7 +623,10 @@
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = school/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iwebsapp.school;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -637,7 +643,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = schoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iwebsapp.schoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -655,7 +665,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = schoolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iwebsapp.schoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -672,7 +686,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = schoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iwebsapp.schoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -689,7 +707,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y99AD5GLT5;
 				INFOPLIST_FILE = schoolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iwebsapp.schoolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
