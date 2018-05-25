@@ -15,6 +15,7 @@
 		840DB06E20B7581000A4AD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DB06C20B7581000A4AD84 /* LaunchScreen.storyboard */; };
 		840DB07920B7581000A4AD84 /* schoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB07820B7581000A4AD84 /* schoolTests.swift */; };
 		840DB08420B7581000A4AD84 /* schoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB08320B7581000A4AD84 /* schoolUITests.swift */; };
+		845B7AB620B7F114003E8A8B /* CreateUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B7AB520B7F114003E8A8B /* CreateUserController.swift */; };
 		BB9E05A1E56AAAD9E2B39D21 /* Pods_schoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29A9CC44B12A7BB011BD1DA /* Pods_schoolUITests.framework */; };
 		BD344A24E49D8A62171E5876 /* Pods_schoolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B81209635DB0CACBD2F230 /* Pods_schoolTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		840DB07F20B7581000A4AD84 /* schoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840DB08320B7581000A4AD84 /* schoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schoolUITests.swift; sourceTree = "<group>"; };
 		840DB08520B7581000A4AD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845B7AB520B7F114003E8A8B /* CreateUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserController.swift; sourceTree = "<group>"; };
 		8625E287EABEA963D2586D5F /* Pods-schoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schoolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-schoolTests/Pods-schoolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C9E382CFC49DA162B85217C /* Pods_school.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_school.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B81209635DB0CACBD2F230 /* Pods_schoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schoolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 			children = (
 				840DB06320B7580800A4AD84 /* AppDelegate.swift */,
 				840DB06520B7580800A4AD84 /* LoginController.swift */,
+				845B7AB520B7F114003E8A8B /* CreateUserController.swift */,
 				840DB06720B7580800A4AD84 /* Main.storyboard */,
 				840DB06A20B7581000A4AD84 /* Assets.xcassets */,
 				840DB06C20B7581000A4AD84 /* LaunchScreen.storyboard */,
@@ -426,6 +429,7 @@
 			files = (
 				840DB06620B7580800A4AD84 /* LoginController.swift in Sources */,
 				840DB06420B7580800A4AD84 /* AppDelegate.swift in Sources */,
+				845B7AB620B7F114003E8A8B /* CreateUserController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

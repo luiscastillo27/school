@@ -1,23 +1,26 @@
 //
-//  ViewController.swift
+//  CreateUserController.swift
 //  school
 //
-//  Created by admin on 24/05/18.
+//  Created by admin on 25/05/18.
 //  Copyright © 2018 iwebsapp. All rights reserved.
 //
 
 import UIKit
 
-class LoginController: UIViewController {
+class CreateUserController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    @IBAction func arraw(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil )
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
-
+    
+    
 }
-
