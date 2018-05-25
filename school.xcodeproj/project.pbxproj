@@ -116,9 +116,8 @@
 		840DB06220B7580800A4AD84 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				845B7AB720B7FA1F003E8A8B /* View */,
 				840DB06320B7580800A4AD84 /* AppDelegate.swift */,
-				840DB06520B7580800A4AD84 /* LoginController.swift */,
-				845B7AB520B7F114003E8A8B /* CreateUserController.swift */,
 				840DB06720B7580800A4AD84 /* Main.storyboard */,
 				840DB06A20B7581000A4AD84 /* Assets.xcassets */,
 				840DB06C20B7581000A4AD84 /* LaunchScreen.storyboard */,
@@ -143,6 +142,15 @@
 				840DB08520B7581000A4AD84 /* Info.plist */,
 			);
 			path = schoolUITests;
+			sourceTree = "<group>";
+		};
+		845B7AB720B7FA1F003E8A8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				840DB06520B7580800A4AD84 /* LoginController.swift */,
+				845B7AB520B7F114003E8A8B /* CreateUserController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		95CABC560F1D61ADD0206D4B /* Frameworks */ = {
