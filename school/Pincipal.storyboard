@@ -61,7 +61,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-i5-Knj">
-                                                    <rect key="frame" x="27" y="8" width="266" height="64"/>
+                                                    <rect key="frame" x="27" y="8.5" width="266" height="64"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="0pY-dZ-Iin">
                                                             <rect key="frame" x="8" y="10" width="45" height="45"/>
@@ -250,27 +250,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header-ajustes" translatesAutoresizingMaskIntoConstraints="NO" id="X1a-zj-zyR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-ajustes" translatesAutoresizingMaskIntoConstraints="NO" id="X1a-zj-zyR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X1a-zj-zyR" secondAttribute="height" multiplier="320:171" id="3OL-O4-dIz"/>
+                                </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ArB-8Q-HnQ">
-                                <rect key="frame" x="27" y="120" width="266" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArB-8Q-HnQ">
+                                <rect key="frame" x="27" y="123" width="266" height="64"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="TMx-y5-Fkk">
                                         <rect key="frame" x="8" y="10" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingenieria en Software" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xg1-aY-VDU">
-                                        <rect key="frame" x="61" y="36" width="399" height="17"/>
+                                        <rect key="frame" x="61" y="33" width="197" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luis Manuel Castillo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36C-mI-cM3">
-                                        <rect key="frame" x="61" y="10" width="399" height="20"/>
+                                        <rect key="frame" x="61" y="13" width="197" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -278,16 +279,21 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="76X-A6-YuX"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-CG-Tbo">
-                                <rect key="frame" x="27" y="192" width="266" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-CG-Tbo">
+                                <rect key="frame" x="27" y="203" width="266" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Ytz-Wc-c1Y"/>
+                                </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Editar perfil">
@@ -305,13 +311,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GF1-iv-0VP">
-                                <rect key="frame" x="27" y="264" width="266" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF1-iv-0VP">
+                                <rect key="frame" x="27" y="282" width="266" height="64"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="18N-xp-Bup">
-                                        <rect key="frame" x="15" y="15" width="236" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="18N-xp-Bup">
+                                        <rect key="frame" x="15" y="15" width="236" height="35"/>
                                         <segments>
                                             <segment title="Activo"/>
                                             <segment title="Inactivo"/>
@@ -320,16 +324,25 @@
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="18N-xp-Bup" secondAttribute="trailing" constant="15" id="1Kj-It-Tu7"/>
+                                    <constraint firstAttribute="bottom" secondItem="18N-xp-Bup" secondAttribute="bottom" constant="15" id="3nt-Rb-XVN"/>
+                                    <constraint firstItem="18N-xp-Bup" firstAttribute="top" secondItem="GF1-iv-0VP" secondAttribute="top" constant="15" id="LcG-Pt-0gH"/>
+                                    <constraint firstAttribute="height" constant="64" id="bl8-0P-YkW"/>
+                                    <constraint firstItem="18N-xp-Bup" firstAttribute="leading" secondItem="GF1-iv-0VP" secondAttribute="leading" constant="15" id="kkX-9f-FRG"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFQ-1O-eLZ">
-                                <rect key="frame" x="27" y="332" width="266" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFQ-1O-eLZ">
+                                <rect key="frame" x="27" y="361" width="266" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Z5l-cg-HnD"/>
+                                </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Cerrar sesión">
@@ -352,6 +365,41 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Et1-CG-Tbo" firstAttribute="top" secondItem="ArB-8Q-HnQ" secondAttribute="bottom" constant="16" id="1Rd-fh-rhJ"/>
+                            <constraint firstItem="GF1-iv-0VP" firstAttribute="top" secondItem="Et1-CG-Tbo" secondAttribute="bottom" constant="15" id="1ec-dk-h9b"/>
+                            <constraint firstItem="X1a-zj-zyR" firstAttribute="leading" secondItem="GKP-ad-fi8" secondAttribute="leading" id="6Py-uX-eRX"/>
+                            <constraint firstItem="GKP-ad-fi8" firstAttribute="trailing" secondItem="PFQ-1O-eLZ" secondAttribute="trailing" constant="27" id="Cps-oO-zC4">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="GKP-ad-fi8" firstAttribute="trailing" secondItem="GF1-iv-0VP" secondAttribute="trailing" constant="27" id="Dhy-gg-vxC">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="GKP-ad-fi8" firstAttribute="trailing" secondItem="ArB-8Q-HnQ" secondAttribute="trailing" constant="27" id="FdH-eD-CBn">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="X1a-zj-zyR" firstAttribute="top" secondItem="nE3-Em-4VH" secondAttribute="top" id="PPs-b9-NRR"/>
+                            <constraint firstItem="X1a-zj-zyR" firstAttribute="trailing" secondItem="GKP-ad-fi8" secondAttribute="trailing" id="SZz-cu-RDj"/>
+                            <constraint firstItem="GKP-ad-fi8" firstAttribute="trailing" secondItem="Et1-CG-Tbo" secondAttribute="trailing" constant="27" id="cyb-eV-YUW">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="PFQ-1O-eLZ" firstAttribute="top" secondItem="GF1-iv-0VP" secondAttribute="bottom" constant="15" id="g34-H0-HMJ"/>
+                            <constraint firstItem="PFQ-1O-eLZ" firstAttribute="leading" secondItem="GKP-ad-fi8" secondAttribute="leading" constant="27" id="qYO-Fc-bwD">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="ArB-8Q-HnQ" firstAttribute="leading" secondItem="GKP-ad-fi8" secondAttribute="leading" constant="27" id="qsf-Lm-RWo">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="Et1-CG-Tbo" firstAttribute="leading" secondItem="GKP-ad-fi8" secondAttribute="leading" constant="27" id="vB6-SG-dbt">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="GF1-iv-0VP" firstAttribute="leading" secondItem="GKP-ad-fi8" secondAttribute="leading" constant="27" id="z4P-Wb-UuL">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="ArB-8Q-HnQ" firstAttribute="top" secondItem="GKP-ad-fi8" secondAttribute="top" constant="103" id="zUe-K9-TYg">
+                                <variation key="heightClass=regular-widthClass=regular" constant="335"/>
+                            </constraint>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GKP-ad-fi8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ajustes" image="icon-settings" selectedImage="icon-settings-strong" id="2Vc-wS-gqz"/>
