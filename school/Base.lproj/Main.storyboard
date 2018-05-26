@@ -251,13 +251,13 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUa-3Z-IRh">
-                                <rect key="frame" x="27" y="20" width="36" height="36"/>
+                                <rect key="frame" x="27" y="20" width="45" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="Dm1-bW-5ws"/>
-                                    <constraint firstAttribute="height" constant="36" id="sgP-pK-slh"/>
+                                    <constraint firstAttribute="width" constant="45" id="Dm1-bW-5ws"/>
+                                    <constraint firstAttribute="height" constant="45" id="sgP-pK-slh"/>
                                 </constraints>
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="icon-atras">
+                                <state key="normal" backgroundImage="icon-atras-withe">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -299,6 +299,6 @@
     </scenes>
     <resources>
         <image name="header-login-recortado" width="261" height="133"/>
-        <image name="icon-atras" width="36" height="36"/>
+        <image name="icon-atras-withe" width="24" height="24"/>
     </resources>
 </document>

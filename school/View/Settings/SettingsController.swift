@@ -35,6 +35,9 @@ class SettingsController: UIViewController {
         listenerExit.layer.shadowOffset = CGSize.zero
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation
