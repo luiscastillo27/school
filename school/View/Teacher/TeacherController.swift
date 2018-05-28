@@ -7,24 +7,42 @@
 //
 
 import UIKit
+import Lottie
 
 class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var txtLoading: UILabel!
+    @IBOutlet weak var viewSearch: UIView!
+    @IBOutlet weak var loading: UIView!
     private var teacherListViewModel: TeacherListViewModel!
     private var dataTeacher: DataTeacher!
-    @IBOutlet weak var viewSearch: UIView!
+    private let animationView = LOTAnimationView(name: "loading")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        
+        
+//        animationView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+//        animationView.backgroundColor = UIColor.blue
+//        animationView.loopAnimation = true
+//        view.addSubview(animationView)
+//        animationView.play()
+        
         table.delegate = self
         table.dataSource = self
         viewSearch.layer.shadowColor = UIColor.black.cgColor
         viewSearch.layer.shadowOpacity = 0.5
         viewSearch.layer.shadowOffset = CGSize.zero
+        self.table.isHidden = true
+        self.txtLoading.isHidden = false
         self.dataTeacher = DataTeacher()
         self.teacherListViewModel = TeacherListViewModel(dataTeacher: self.dataTeacher )
-        self.table.reloadData()
+        DispatchQueue.main.async {
+            self.table.reloadData()
+        }
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,6 +50,12 @@ class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if self.teacherListViewModel.teachersViewModel.count == 0 {
+            self.txtLoading.text = "No cuentas con ningún profesor"
+        } else {
+            self.table.isHidden = false
+            self.txtLoading.isHidden = true
+        }
         return self.teacherListViewModel.teachersViewModel.count
     }
     
@@ -47,14 +71,5 @@ class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataS
         self.view.endEditing(true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

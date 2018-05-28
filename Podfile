@@ -18,7 +18,8 @@ target 'school' do
   pod 'RevealingSplashView'
   pod 'SwiftyJSON'
   pod 'Alamofire'
-
+  pod 'NVActivityIndicatorView'
+ 
 
   target 'schoolTests' do
     inherit! :search_paths

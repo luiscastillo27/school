@@ -18,6 +18,8 @@
 		845B7AB620B7F114003E8A8B /* CreateUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B7AB520B7F114003E8A8B /* CreateUserController.swift */; };
 		8462A96B20B93188000D9F39 /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462A96A20B93188000D9F39 /* ContactController.swift */; };
 		8462A96E20B936FF000D9F39 /* MatterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462A96D20B936FF000D9F39 /* MatterController.swift */; };
+		8489316820BA61DA00330969 /* internet.json in Resources */ = {isa = PBXBuildFile; fileRef = 8489316620BA61DA00330969 /* internet.json */; };
+		8489316920BA61DA00330969 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 8489316720BA61DA00330969 /* loading.json */; };
 		849F235D20B8588B0044BB64 /* Pincipal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F235C20B8588B0044BB64 /* Pincipal.storyboard */; };
 		849F235F20B864860044BB64 /* TeachersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F235E20B864860044BB64 /* TeachersCell.swift */; };
 		849F236120B8664D0044BB64 /* TeacherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F236020B8664D0044BB64 /* TeacherController.swift */; };
@@ -70,6 +72,8 @@
 		845B7AB520B7F114003E8A8B /* CreateUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserController.swift; sourceTree = "<group>"; };
 		8462A96A20B93188000D9F39 /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		8462A96D20B936FF000D9F39 /* MatterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterController.swift; sourceTree = "<group>"; };
+		8489316620BA61DA00330969 /* internet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = internet.json; path = src/Animations/internet.json; sourceTree = SOURCE_ROOT; };
+		8489316720BA61DA00330969 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = src/Animations/loading.json; sourceTree = SOURCE_ROOT; };
 		849F235C20B8588B0044BB64 /* Pincipal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pincipal.storyboard; sourceTree = "<group>"; };
 		849F235E20B864860044BB64 /* TeachersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersCell.swift; sourceTree = "<group>"; };
 		849F236020B8664D0044BB64 /* TeacherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 		840DB06220B7580800A4AD84 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				8489316520BA61AC00330969 /* Animations */,
 				849F237320B8A48C0044BB64 /* Utils */,
 				849F236420B867F40044BB64 /* Model */,
 				845B7AB720B7FA1F003E8A8B /* View */,
@@ -199,6 +204,15 @@
 				8462A96D20B936FF000D9F39 /* MatterController.swift */,
 			);
 			path = Matter;
+			sourceTree = "<group>";
+		};
+		8489316520BA61AC00330969 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				8489316620BA61DA00330969 /* internet.json */,
+				8489316720BA61DA00330969 /* loading.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		849F236420B867F40044BB64 /* Model */ = {
@@ -410,6 +424,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				849F235D20B8588B0044BB64 /* Pincipal.storyboard in Resources */,
+				8489316820BA61DA00330969 /* internet.json in Resources */,
+				8489316920BA61DA00330969 /* loading.json in Resources */,
 				840DB06E20B7581000A4AD84 /* LaunchScreen.storyboard in Resources */,
 				840DB06B20B7581000A4AD84 /* Assets.xcassets in Resources */,
 				840DB06920B7580800A4AD84 /* Main.storyboard in Resources */,
