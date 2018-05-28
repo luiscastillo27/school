@@ -62,7 +62,7 @@ class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TeachersCell
         let teacher = self.teacherListViewModel.teachersViewModel[indexPath.row]
-        cell.listenerTeacher.text = teacher.name
+        cell.listenerTeacher.text = "\(teacher.name!) \(teacher.lastname!)"
         cell.listenerMatter.text = teacher.matter
         return cell
     }

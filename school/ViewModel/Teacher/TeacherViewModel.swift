@@ -12,11 +12,14 @@ class TeacherViewModel {
     
     var avatar: String!
     var name: String!
+    var lastname: String!
     var matter: String!
+    
     
     init(teacher: Teacher) {
         self.avatar = teacher.avatar
         self.name = teacher.name
+        self.lastname = teacher.lastname
         self.matter = teacher.matter
     }
     

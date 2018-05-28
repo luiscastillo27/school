@@ -1,23 +1,25 @@
 //
-//  teacher.swift
+//  Matter.swift
 //  school
 //
-//  Created by admin on 25/05/18.
+//  Created by admin on 28/05/18.
 //  Copyright © 2018 iwebsapp. All rights reserved.
 //
 
 import Foundation
 
-class Teacher {
+class Matter {
+    
+    var matter: String
     var avatar: String
     var name: String
     var lastname: String
-    var matter: String
     
-    init(avatar: String, name: String, lastname: String, matter: String) {
+    init(metter: String, avatar: String, name: String, lastname: String) {
+        self.matter = metter
         self.avatar = avatar
         self.name = name
         self.lastname = lastname
-        self.matter = matter
     }
+    
 }
