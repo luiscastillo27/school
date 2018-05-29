@@ -1,19 +1,17 @@
 //
-//  MetterCell.swift
+//  ProfileTeacherCell.swift
 //  school
 //
-//  Created by admin on 27/05/18.
+//  Created by admin on 28/05/18.
 //  Copyright © 2018 iwebsapp. All rights reserved.
 //
 
 import UIKit
 
-class MetterCell: UITableViewCell {
+class ProfileTeacherCell: UITableViewCell {
 
     @IBOutlet weak var cardView: UIView!
-    @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var txtMatter: UILabel!
-    @IBOutlet weak var txtTeacher: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +22,8 @@ class MetterCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+
+        // Configure the view for the selected state
     }
 
 }

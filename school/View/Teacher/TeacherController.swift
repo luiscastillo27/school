@@ -66,6 +66,20 @@ class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataS
         cell.listenerMatter.text = teacher.matter
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goProfileTeacher", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goProfileTeacher" {
+            if let id = table.indexPathForSelectedRow {
+                let destino = segue.destination as! ProfileTeacherController
+                let fila = self.teacherListViewModel.teachersViewModel[id.row]
+                destino.selectedTeacherViewModel = fila
+            }
+        }
+    }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

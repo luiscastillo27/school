@@ -42,6 +42,8 @@
 		849F236D20B896840044BB64 /* UIViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F236C20B896840044BB64 /* UIViewUtil.swift */; };
 		849F237520B8A4A20044BB64 /* UIAlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F237420B8A4A20044BB64 /* UIAlertUtil.swift */; };
 		849F237820B8AC220044BB64 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F237720B8AC220044BB64 /* SettingsController.swift */; };
+		84C1791220BCE47C00F05568 /* ProfileTeacherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1791120BCE47C00F05568 /* ProfileTeacherController.swift */; };
+		84C1791520BCE91000F05568 /* ProfileTeacherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1791420BCE91000F05568 /* ProfileTeacherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		849F236C20B896840044BB64 /* UIViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUtil.swift; sourceTree = "<group>"; };
 		849F237420B8A4A20044BB64 /* UIAlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertUtil.swift; sourceTree = "<group>"; };
 		849F237720B8AC220044BB64 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		84C1791120BCE47C00F05568 /* ProfileTeacherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTeacherController.swift; sourceTree = "<group>"; };
+		84C1791420BCE91000F05568 /* ProfileTeacherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTeacherCell.swift; sourceTree = "<group>"; };
 		C715F8F2B302D4273A648815 /* Pods_schoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schoolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C11D05DB97CD263F8F25DF /* Pods-schoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schoolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-schoolUITests/Pods-schoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F4E5F24390AD380B0A45F559 /* Pods_school.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_school.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +217,7 @@
 		845B7AB720B7FA1F003E8A8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84C1791320BCE48400F05568 /* ProfileTeacher */,
 				8462A96C20B936E2000D9F39 /* Matter */,
 				8462A96920B93168000D9F39 /* Contact */,
 				849F237620B8AC0C0044BB64 /* Settings */,
@@ -364,6 +369,15 @@
 				849F237720B8AC220044BB64 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		84C1791320BCE48400F05568 /* ProfileTeacher */ = {
+			isa = PBXGroup;
+			children = (
+				84C1791120BCE47C00F05568 /* ProfileTeacherController.swift */,
+				84C1791420BCE91000F05568 /* ProfileTeacherCell.swift */,
+			);
+			path = ProfileTeacher;
 			sourceTree = "<group>";
 		};
 		BBC6C2D8D3F1D56778E2B006 /* Frameworks */ = {
@@ -640,10 +654,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1791520BCE91000F05568 /* ProfileTeacherCell.swift in Sources */,
 				849F237820B8AC220044BB64 /* SettingsController.swift in Sources */,
 				8477079320BBD24D009DEDF1 /* ContactViewModel.swift in Sources */,
 				8477078720BBC692009DEDF1 /* DataMatter.swift in Sources */,
 				8462A96B20B93188000D9F39 /* ContactController.swift in Sources */,
+				84C1791220BCE47C00F05568 /* ProfileTeacherController.swift in Sources */,
 				849F236620B868320044BB64 /* DataTeacher.swift in Sources */,
 				8477078920BBC6B7009DEDF1 /* Matter.swift in Sources */,
 				849F236920B869F80044BB64 /* TeacherListViewModel.swift in Sources */,

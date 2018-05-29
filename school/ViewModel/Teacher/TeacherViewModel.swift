@@ -10,6 +10,7 @@ import Foundation
 
 class TeacherViewModel {
     
+    var id: String
     var avatar: String!
     var name: String!
     var lastname: String!
@@ -17,6 +18,7 @@ class TeacherViewModel {
     
     
     init(teacher: Teacher) {
+        self.id = teacher.id
         self.avatar = teacher.avatar
         self.name = teacher.name
         self.lastname = teacher.lastname
