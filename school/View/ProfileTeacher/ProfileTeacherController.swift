@@ -8,16 +8,24 @@
 
 import UIKit
 
-class ProfileTeacherController: UIViewController {
+class ProfileTeacherController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var txtName: UILabel!
+    @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var cardRanting: UIView!
     @IBOutlet weak var cardView: UIView!
     public var selectedTeacherViewModel: TeacherViewModel!
+    private var dataMetterTeacher: DataMetterTeacherProfile!
+    private var metterTeacherProfileListViewModel: MetterTeacherProfileListViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(selectedTeacherViewModel.id)
-        
+        table.dataSource = self
+        table.delegate = self
+        self.dataMetterTeacher = DataMetterTeacherProfile()
+        self.metterTeacherProfileListViewModel = MetterTeacherProfileListViewModel(dataMetterTeacherProfile: self.dataMetterTeacher )
+        self.table.reloadData()
         cardRanting.layer.shadowColor = UIColor.black.cgColor
         cardRanting.layer.shadowOpacity = 0.5
         cardRanting.layer.shadowOffset = CGSize.zero
@@ -26,24 +34,30 @@ class ProfileTeacherController: UIViewController {
         cardView.layer.shadowOpacity = 0.5
         cardView.layer.shadowOffset = CGSize.zero
     }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.metterTeacherProfileListViewModel.metterTeacherProfileViewModel.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfileTeacherCell
+        let metter = self.metterTeacherProfileListViewModel.metterTeacherProfileViewModel[indexPath.row]
+        cell.txtMatter.text = metter.name
+        cell.txtYear.text = "Año - \(metter.year)"
+        return cell
+    }
     
     @IBAction func arrow(_ sender: UIButton) {
         dismiss(animated: true, completion: nil )
     }
     
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

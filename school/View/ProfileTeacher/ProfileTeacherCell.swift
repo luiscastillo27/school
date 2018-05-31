@@ -12,6 +12,7 @@ class ProfileTeacherCell: UITableViewCell {
 
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var txtMatter: UILabel!
+    @IBOutlet weak var txtYear: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -44,6 +44,10 @@
 		849F237820B8AC220044BB64 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F237720B8AC220044BB64 /* SettingsController.swift */; };
 		84C1791220BCE47C00F05568 /* ProfileTeacherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1791120BCE47C00F05568 /* ProfileTeacherController.swift */; };
 		84C1791520BCE91000F05568 /* ProfileTeacherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1791420BCE91000F05568 /* ProfileTeacherCell.swift */; };
+		84E195F120BD053A007222C5 /* MetterTeacherProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E195F020BD053A007222C5 /* MetterTeacherProfile.swift */; };
+		84E195F420BD05B8007222C5 /* MetterTeacherProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E195F320BD05B8007222C5 /* MetterTeacherProfileViewModel.swift */; };
+		84E195F620BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E195F520BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift */; };
+		84E195F920BD06B4007222C5 /* DataMetterTeacherProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E195F820BD06B4007222C5 /* DataMetterTeacherProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +114,10 @@
 		849F237720B8AC220044BB64 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		84C1791120BCE47C00F05568 /* ProfileTeacherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTeacherController.swift; sourceTree = "<group>"; };
 		84C1791420BCE91000F05568 /* ProfileTeacherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTeacherCell.swift; sourceTree = "<group>"; };
+		84E195F020BD053A007222C5 /* MetterTeacherProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetterTeacherProfile.swift; sourceTree = "<group>"; };
+		84E195F320BD05B8007222C5 /* MetterTeacherProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetterTeacherProfileViewModel.swift; sourceTree = "<group>"; };
+		84E195F520BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetterTeacherProfileListViewModel.swift; sourceTree = "<group>"; };
+		84E195F820BD06B4007222C5 /* DataMetterTeacherProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMetterTeacherProfile.swift; sourceTree = "<group>"; };
 		C715F8F2B302D4273A648815 /* Pods_schoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schoolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C11D05DB97CD263F8F25DF /* Pods-schoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schoolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-schoolUITests/Pods-schoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F4E5F24390AD380B0A45F559 /* Pods_school.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_school.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +302,7 @@
 		849F236420B867F40044BB64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84E195F720BD0694007222C5 /* TeacherProfile */,
 				8477079620BBD395009DEDF1 /* Contact */,
 				8477078520BBC678009DEDF1 /* Matter */,
 				849F236E20B8A4150044BB64 /* Teacher */,
@@ -304,6 +313,7 @@
 		849F236720B869D80044BB64 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				84E195F220BD0599007222C5 /* TeacherProfile */,
 				8477079120BBD23C009DEDF1 /* Contact */,
 				8477078A20BBCB6A009DEDF1 /* Metter */,
 				849F237020B8A4400044BB64 /* Teacher */,
@@ -376,8 +386,26 @@
 			children = (
 				84C1791120BCE47C00F05568 /* ProfileTeacherController.swift */,
 				84C1791420BCE91000F05568 /* ProfileTeacherCell.swift */,
+				84E195F020BD053A007222C5 /* MetterTeacherProfile.swift */,
 			);
 			path = ProfileTeacher;
+			sourceTree = "<group>";
+		};
+		84E195F220BD0599007222C5 /* TeacherProfile */ = {
+			isa = PBXGroup;
+			children = (
+				84E195F320BD05B8007222C5 /* MetterTeacherProfileViewModel.swift */,
+				84E195F520BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift */,
+			);
+			path = TeacherProfile;
+			sourceTree = "<group>";
+		};
+		84E195F720BD0694007222C5 /* TeacherProfile */ = {
+			isa = PBXGroup;
+			children = (
+				84E195F820BD06B4007222C5 /* DataMetterTeacherProfile.swift */,
+			);
+			path = TeacherProfile;
 			sourceTree = "<group>";
 		};
 		BBC6C2D8D3F1D56778E2B006 /* Frameworks */ = {
@@ -655,7 +683,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C1791520BCE91000F05568 /* ProfileTeacherCell.swift in Sources */,
+				84E195F620BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift in Sources */,
 				849F237820B8AC220044BB64 /* SettingsController.swift in Sources */,
+				84E195F920BD06B4007222C5 /* DataMetterTeacherProfile.swift in Sources */,
 				8477079320BBD24D009DEDF1 /* ContactViewModel.swift in Sources */,
 				8477078720BBC692009DEDF1 /* DataMatter.swift in Sources */,
 				8462A96B20B93188000D9F39 /* ContactController.swift in Sources */,
@@ -664,7 +694,9 @@
 				8477078920BBC6B7009DEDF1 /* Matter.swift in Sources */,
 				849F236920B869F80044BB64 /* TeacherListViewModel.swift in Sources */,
 				8477079020BBD19B009DEDF1 /* Contact.swift in Sources */,
+				84E195F120BD053A007222C5 /* MetterTeacherProfile.swift in Sources */,
 				849F235F20B864860044BB64 /* TeachersCell.swift in Sources */,
+				84E195F420BD05B8007222C5 /* MetterTeacherProfileViewModel.swift in Sources */,
 				8477078C20BBCB7D009DEDF1 /* MetterViewModel.swift in Sources */,
 				8477079820BBD3AA009DEDF1 /* DataContact.swift in Sources */,
 				849F236120B8664D0044BB64 /* TeacherController.swift in Sources */,
