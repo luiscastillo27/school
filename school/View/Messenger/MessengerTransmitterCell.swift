@@ -1,5 +1,5 @@
 //
-//  MessengerCell.swift
+//  MessengerTransmitterCell.swift
 //  school
 //
 //  Created by admin on 31/05/18.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-class MessengerReceiverCell: UITableViewCell {
+class MessengerTransmitterCell: UITableViewCell {
 
     @IBOutlet weak var txtTransmitter: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -33,8 +33,6 @@ class MessengerController: UIViewController, UITableViewDelegate, UITableViewDat
         cardView.layer.shadowOffset = CGSize.zero
         
         listenerSend.isEnabled = false
-        print("el maestro selecionado es: \(selectedMessage!)")
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -46,10 +44,19 @@ class MessengerController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MessengerReceiverCell
-        let msn = self.messageListViewModel.messengerViewModel[indexPath.row]
-        cell.txtTransmitter.text = "  \(msn.message)  "
-        return cell
+        
+        if self.messageListViewModel.messengerViewModel[indexPath.row].receiver == "Ana Mireya" {
+            let cell = table.dequeueReusableCell(withIdentifier: "cellReceiver", for: indexPath) as! MessengerReceiverCell
+            let msn = self.messageListViewModel.messengerViewModel[indexPath.row]
+            cell.txtReceiver.text = "  \(msn.message)  "
+            return cell
+        } else {
+            let cell = table.dequeueReusableCell(withIdentifier: "cellTransmitter", for: indexPath) as! MessengerTransmitterCell
+            let msn = self.messageListViewModel.messengerViewModel[indexPath.row]
+            cell.txtTransmitter.text = "  \(msn.message)  "
+            return cell
+        }
+
     }
     
     @IBAction func dissmis(_ sender: UIButton) {

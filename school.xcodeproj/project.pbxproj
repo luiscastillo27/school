@@ -34,14 +34,14 @@
 		8489316B20BBB28000330969 /* MetterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489316A20BBB28000330969 /* MetterCell.swift */; };
 		8489316D20BBB4E900330969 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489316C20BBB4E900330969 /* ContactCell.swift */; };
 		84997DB120BFBD6C002EA7C6 /* MessengerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DB020BFBD6C002EA7C6 /* MessengerController.swift */; };
-		84997DB320BFC8DF002EA7C6 /* MessengerTransmitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DB220BFC8DF002EA7C6 /* MessengerTransmitterCell.swift */; };
+		84997DB320BFC8DF002EA7C6 /* MessengerReceiverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DB220BFC8DF002EA7C6 /* MessengerReceiverCell.swift */; };
 		84997DB520BFCA29002EA7C6 /* UIPaddingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DB420BFCA29002EA7C6 /* UIPaddingUtil.swift */; };
 		84997DB720BFCCDD002EA7C6 /* Messager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DB620BFCCDD002EA7C6 /* Messager.swift */; };
 		84997DBA20BFCDF2002EA7C6 /* DataMessanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DB920BFCDF2002EA7C6 /* DataMessanger.swift */; };
 		84997DBD20BFCEFE002EA7C6 /* MessagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DBC20BFCEFE002EA7C6 /* MessagerViewModel.swift */; };
 		84997DBF20BFCF1C002EA7C6 /* MessagerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DBE20BFCF1C002EA7C6 /* MessagerListViewModel.swift */; };
-		84997DC120BFDC69002EA7C6 /* MessagerTransmitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84997DC020BFDC69002EA7C6 /* MessagerTransmitterCell.swift */; };
 		849AAD6520C0A8C000BD2CCC /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849AAD6420C0A8C000BD2CCC /* EditProfileController.swift */; };
+		849AAD6720C0BA7000BD2CCC /* MessengerTransmitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849AAD6620C0BA7000BD2CCC /* MessengerTransmitterCell.swift */; };
 		849F235D20B8588B0044BB64 /* Pincipal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F235C20B8588B0044BB64 /* Pincipal.storyboard */; };
 		849F235F20B864860044BB64 /* TeachersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F235E20B864860044BB64 /* TeachersCell.swift */; };
 		849F236120B8664D0044BB64 /* TeacherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F236020B8664D0044BB64 /* TeacherController.swift */; };
@@ -114,14 +114,14 @@
 		8489316A20BBB28000330969 /* MetterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetterCell.swift; sourceTree = "<group>"; };
 		8489316C20BBB4E900330969 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		84997DB020BFBD6C002EA7C6 /* MessengerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerController.swift; sourceTree = "<group>"; };
-		84997DB220BFC8DF002EA7C6 /* MessengerTransmitterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerTransmitterCell.swift; sourceTree = "<group>"; };
+		84997DB220BFC8DF002EA7C6 /* MessengerReceiverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerReceiverCell.swift; sourceTree = "<group>"; };
 		84997DB420BFCA29002EA7C6 /* UIPaddingUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPaddingUtil.swift; sourceTree = "<group>"; };
 		84997DB620BFCCDD002EA7C6 /* Messager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messager.swift; sourceTree = "<group>"; };
 		84997DB920BFCDF2002EA7C6 /* DataMessanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMessanger.swift; sourceTree = "<group>"; };
 		84997DBC20BFCEFE002EA7C6 /* MessagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagerViewModel.swift; sourceTree = "<group>"; };
 		84997DBE20BFCF1C002EA7C6 /* MessagerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagerListViewModel.swift; sourceTree = "<group>"; };
-		84997DC020BFDC69002EA7C6 /* MessagerTransmitterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagerTransmitterCell.swift; sourceTree = "<group>"; };
 		849AAD6420C0A8C000BD2CCC /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		849AAD6620C0BA7000BD2CCC /* MessengerTransmitterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerTransmitterCell.swift; sourceTree = "<group>"; };
 		849F235C20B8588B0044BB64 /* Pincipal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pincipal.storyboard; sourceTree = "<group>"; };
 		849F235E20B864860044BB64 /* TeachersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersCell.swift; sourceTree = "<group>"; };
 		849F236020B8664D0044BB64 /* TeacherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherController.swift; sourceTree = "<group>"; };
@@ -334,9 +334,9 @@
 			isa = PBXGroup;
 			children = (
 				84997DB020BFBD6C002EA7C6 /* MessengerController.swift */,
-				84997DB220BFC8DF002EA7C6 /* MessengerTransmitterCell.swift */,
+				84997DB220BFC8DF002EA7C6 /* MessengerReceiverCell.swift */,
 				84997DB620BFCCDD002EA7C6 /* Messager.swift */,
-				84997DC020BFDC69002EA7C6 /* MessagerTransmitterCell.swift */,
+				849AAD6620C0BA7000BD2CCC /* MessengerTransmitterCell.swift */,
 			);
 			path = Messenger;
 			sourceTree = "<group>";
@@ -775,6 +775,7 @@
 				8477079820BBD3AA009DEDF1 /* DataContact.swift in Sources */,
 				849F236120B8664D0044BB64 /* TeacherController.swift in Sources */,
 				8462A96E20B936FF000D9F39 /* MatterController.swift in Sources */,
+				849AAD6720C0BA7000BD2CCC /* MessengerTransmitterCell.swift in Sources */,
 				8489316B20BBB28000330969 /* MetterCell.swift in Sources */,
 				8489316D20BBB4E900330969 /* ContactCell.swift in Sources */,
 				849F236D20B896840044BB64 /* UIViewUtil.swift in Sources */,
@@ -782,12 +783,11 @@
 				849F236320B867150044BB64 /* Teacher.swift in Sources */,
 				84997DB720BFCCDD002EA7C6 /* Messager.swift in Sources */,
 				840DB06620B7580800A4AD84 /* LoginController.swift in Sources */,
-				84997DC120BFDC69002EA7C6 /* MessagerTransmitterCell.swift in Sources */,
 				84997DBF20BFCF1C002EA7C6 /* MessagerListViewModel.swift in Sources */,
 				849F237520B8A4A20044BB64 /* UIAlertUtil.swift in Sources */,
 				84997DBD20BFCEFE002EA7C6 /* MessagerViewModel.swift in Sources */,
 				8477078E20BBCBEA009DEDF1 /* MetterListViewModel.swift in Sources */,
-				84997DB320BFC8DF002EA7C6 /* MessengerTransmitterCell.swift in Sources */,
+				84997DB320BFC8DF002EA7C6 /* MessengerReceiverCell.swift in Sources */,
 				8477079520BBD27C009DEDF1 /* ContactListViewModel.swift in Sources */,
 				840DB06420B7580800A4AD84 /* AppDelegate.swift in Sources */,
 				84997DBA20BFCDF2002EA7C6 /* DataMessanger.swift in Sources */,
