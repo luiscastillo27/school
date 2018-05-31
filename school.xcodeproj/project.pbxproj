@@ -28,6 +28,7 @@
 		8477079320BBD24D009DEDF1 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477079220BBD24D009DEDF1 /* ContactViewModel.swift */; };
 		8477079520BBD27C009DEDF1 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477079420BBD27C009DEDF1 /* ContactListViewModel.swift */; };
 		8477079820BBD3AA009DEDF1 /* DataContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477079720BBD3AA009DEDF1 /* DataContact.swift */; };
+		847D588620BF8FED00867F49 /* QualificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D588520BF8FED00867F49 /* QualificationController.swift */; };
 		8489316820BA61DA00330969 /* internet.json in Resources */ = {isa = PBXBuildFile; fileRef = 8489316620BA61DA00330969 /* internet.json */; };
 		8489316920BA61DA00330969 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 8489316720BA61DA00330969 /* loading.json */; };
 		8489316B20BBB28000330969 /* MetterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489316A20BBB28000330969 /* MetterCell.swift */; };
@@ -98,6 +99,7 @@
 		8477079220BBD24D009DEDF1 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		8477079420BBD27C009DEDF1 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
 		8477079720BBD3AA009DEDF1 /* DataContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContact.swift; sourceTree = "<group>"; };
+		847D588520BF8FED00867F49 /* QualificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualificationController.swift; sourceTree = "<group>"; };
 		8489316620BA61DA00330969 /* internet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = internet.json; path = src/Animations/internet.json; sourceTree = SOURCE_ROOT; };
 		8489316720BA61DA00330969 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = src/Animations/loading.json; sourceTree = SOURCE_ROOT; };
 		8489316A20BBB28000330969 /* MetterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetterCell.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 		845B7AB720B7FA1F003E8A8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				847D588420BF8FCD00867F49 /* Qualification */,
 				84C1791320BCE48400F05568 /* ProfileTeacher */,
 				8462A96C20B936E2000D9F39 /* Matter */,
 				8462A96920B93168000D9F39 /* Contact */,
@@ -288,6 +291,14 @@
 				8477079720BBD3AA009DEDF1 /* DataContact.swift */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		847D588420BF8FCD00867F49 /* Qualification */ = {
+			isa = PBXGroup;
+			children = (
+				847D588520BF8FED00867F49 /* QualificationController.swift */,
+			);
+			path = Qualification;
 			sourceTree = "<group>";
 		};
 		8489316520BA61AC00330969 /* Animations */ = {
@@ -684,6 +695,7 @@
 			files = (
 				84C1791520BCE91000F05568 /* ProfileTeacherCell.swift in Sources */,
 				84E195F620BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift in Sources */,
+				847D588620BF8FED00867F49 /* QualificationController.swift in Sources */,
 				849F237820B8AC220044BB64 /* SettingsController.swift in Sources */,
 				84E195F920BD06B4007222C5 /* DataMetterTeacherProfile.swift in Sources */,
 				8477079320BBD24D009DEDF1 /* ContactViewModel.swift in Sources */,

@@ -43,6 +43,20 @@ class MatterController: UIViewController, UITableViewDelegate, UITableViewDataSo
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goQualification", sender: self )
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goQualification" {
+            if let id = table.indexPathForSelectedRow {
+                let destine = segue.destination as! QualificationController
+                let data = self.matterListViewModel.matterViewModel[id.row]
+                destine.selectedQualification = data
+            }
+        }
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

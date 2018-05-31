@@ -26,6 +26,7 @@ class ProfileTeacherController: UIViewController, UITableViewDelegate, UITableVi
         self.dataMetterTeacher = DataMetterTeacherProfile()
         self.metterTeacherProfileListViewModel = MetterTeacherProfileListViewModel(dataMetterTeacherProfile: self.dataMetterTeacher )
         self.table.reloadData()
+        
         cardRanting.layer.shadowColor = UIColor.black.cgColor
         cardRanting.layer.shadowOpacity = 0.5
         cardRanting.layer.shadowOffset = CGSize.zero
