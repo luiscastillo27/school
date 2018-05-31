@@ -14,6 +14,8 @@ class QualificationController: UIViewController {
     @IBOutlet weak var firstPartial: UIView!
     @IBOutlet weak var secondPartial: UIView!
     @IBOutlet weak var thirdPartial: UIView!
+    @IBOutlet weak var fourthPartial: UIView!
+    
     public var selectedQualification: MetterViewModel!
     
     override func viewDidLoad() {
@@ -34,6 +36,10 @@ class QualificationController: UIViewController {
         thirdPartial.layer.shadowColor = UIColor.black.cgColor
         thirdPartial.layer.shadowOpacity = 0.5
         thirdPartial.layer.shadowOffset = CGSize.zero
+        
+        fourthPartial.layer.shadowColor = UIColor.black.cgColor
+        fourthPartial.layer.shadowOpacity = 0.5
+        fourthPartial.layer.shadowOffset = CGSize.zero
     }
     
     @IBAction func dissmis(_ sender: UIButton) {
