@@ -10,15 +10,14 @@ import Foundation
 
 class TeacherViewModel {
     
-    var id: String
-    var avatar: String!
-    var name: String!
-    var lastname: String!
-    var matter: String!
-    
+    public var idUser: String
+    public var avatar: String!
+    public var name: String!
+    public var lastname: String!
+    public var matter: String!
     
     init(teacher: Teacher) {
-        self.id = teacher.id
+        self.idUser = teacher.idUser
         self.avatar = teacher.avatar
         self.name = teacher.name
         self.lastname = teacher.lastname
