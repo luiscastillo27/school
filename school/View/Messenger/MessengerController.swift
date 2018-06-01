@@ -15,6 +15,8 @@ class MessengerController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var listenerMessage: UITextField!
     @IBOutlet weak var listenerSend: UIButton!
+    @IBOutlet weak var keyboardHeightLayoutConstraint: NSLayoutConstraint!
+    
     public var selectedMessage: Any!
     private var dataMessager: DataMessanger!
     private var messageListViewModel: MessagerListViewModel!
@@ -23,6 +25,7 @@ class MessengerController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardNotification), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
         
         self.dataMessager = DataMessanger()
         self.messageListViewModel = MessagerListViewModel(dataMessager: self.dataMessager )
@@ -69,6 +72,24 @@ class MessengerController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBAction func sendMessage(_ sender: UIButton) {
         
+    }
+    
+    @objc func keyboardNotification(notification: NSNotification){
+        if let userInfo = notification.userInfo{
+            let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+            let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
+            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
+            let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
+            if (endFrame?.origin.y)! >= UIScreen.main.bounds.size.height {
+                self.keyboardHeightLayoutConstraint?.constant = 0.0
+            } else {
+                var frameEnd = (endFrame?.size.height)!
+                frameEnd = frameEnd * -1
+                self.keyboardHeightLayoutConstraint?.constant = frameEnd
+            }
+            UIView.animate(withDuration: duration, delay: TimeInterval(0), options: animationCurve, animations: { self.view.layoutIfNeeded() }, completion: nil)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
