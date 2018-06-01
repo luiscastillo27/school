@@ -10,8 +10,13 @@ import UIKit
 
 class EditProfileController: UIViewController {
 
+    @IBOutlet weak var cardView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        cardView.layer.shadowColor = UIColor.black.cgColor
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.shadowOffset = CGSize.zero
     }
 
     @IBAction func dissmis(_ sender: UIButton) {
