@@ -10,12 +10,15 @@ import UIKit
 
 class PollsTeacherQuestionsController: UIViewController {
 
+    @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var listenerAddQuestion: UIButton!
     public var selectedTeacherViewModel: TeacherViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        cardView.layer.shadowColor = UIColor.black.cgColor
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.shadowOffset = CGSize.zero
     }
 
     @IBAction func arraw(_ sender: UIButton) {

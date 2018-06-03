@@ -12,9 +12,10 @@ class PollsListTeacherController: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var listenerFinish: UIButton!
+    
     private var teacherListViewModel: TeacherListViewModel!
     private var dataTeacher: DataTeacher!
-    @IBOutlet weak var listenerFinish: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
