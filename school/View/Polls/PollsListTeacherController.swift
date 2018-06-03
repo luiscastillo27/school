@@ -58,9 +58,5 @@ class PollsListTeacherController: UIViewController, UITableViewDelegate, UITable
             }
         }
     }
-    
-    @IBAction func clouse(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil )
-    }
 
 }

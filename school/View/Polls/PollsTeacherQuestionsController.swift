@@ -10,6 +10,7 @@ import UIKit
 
 class PollsTeacherQuestionsController: UIViewController {
 
+    @IBOutlet weak var listenerAddQuestion: UIButton!
     public var selectedTeacherViewModel: TeacherViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,6 +11,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main-->
+        <scene sceneID="V7Y-Qa-KUe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Dwm-pr-OBz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lWk-eZ-m0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="518"/>
+        </scene>
         <!--Polls List Teacher Controller-->
         <scene sceneID="2by-G6-RIo">
             <objects>
@@ -28,16 +36,20 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubO-4b-8XR">
                                 <rect key="frame" x="27" y="47" width="24" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="KjD-5I-IQo"/>
-                                    <constraint firstAttribute="width" constant="24" id="Nhb-97-Z82"/>
+                                    <constraint firstAttribute="height" constant="24" id="KjD-5I-IQo">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="42"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="24" id="Nhb-97-Z82">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="42"/>
+                                    </constraint>
                                 </constraints>
                                 <state key="normal" backgroundImage="ic_cancel"/>
                                 <connections>
-                                    <action selector="clouse:" destination="34e-0S-AoN" eventType="touchUpInside" id="y2g-W7-ZeV"/>
+                                    <segue destination="Dwm-pr-OBz" kind="show" id="EPX-Ot-EWJ"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnV-go-fpD">
-                                <rect key="frame" x="27" y="79" width="266" height="60"/>
+                                <rect key="frame" x="27" y="86" width="266" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis materias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inS-15-Vol">
                                         <rect key="frame" x="10" y="0.0" width="246" height="60"/>
@@ -61,7 +73,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Eb-uv-bjJ">
-                                <rect key="frame" x="0.0" y="159" width="320" height="409"/>
+                                <rect key="frame" x="0.0" y="166" width="320" height="402"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -107,6 +119,11 @@
                                                         <constraint firstItem="q9j-Zg-vET" firstAttribute="leading" secondItem="EEO-El-D85" secondAttribute="trailing" constant="8" id="qgR-Og-5QU"/>
                                                         <constraint firstAttribute="trailing" secondItem="CZS-C5-AD3" secondAttribute="trailing" constant="10" id="uSj-NZ-qNV"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -152,7 +169,7 @@
                             <constraint firstItem="ZJ8-d4-avL" firstAttribute="leading" secondItem="GbV-is-Hc2" secondAttribute="leading" id="bGv-YE-cYS"/>
                             <constraint firstItem="GbV-is-Hc2" firstAttribute="bottom" secondItem="3Eb-uv-bjJ" secondAttribute="bottom" id="dhL-Vi-ytA"/>
                             <constraint firstItem="ZJ8-d4-avL" firstAttribute="top" secondItem="Day-fJ-xHo" secondAttribute="top" id="lL0-38-2iq"/>
-                            <constraint firstItem="lnV-go-fpD" firstAttribute="top" secondItem="ubO-4b-8XR" secondAttribute="bottom" constant="8" id="nWp-8e-Vss">
+                            <constraint firstItem="lnV-go-fpD" firstAttribute="top" secondItem="ubO-4b-8XR" secondAttribute="bottom" constant="15" id="nWp-8e-Vss">
                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
                         </constraints>
@@ -188,29 +205,65 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieo-pD-07d">
                                 <rect key="frame" x="27" y="47" width="24" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="fup-Yo-sCf"/>
-                                    <constraint firstAttribute="width" constant="24" id="mYf-kx-ACo"/>
+                                    <constraint firstAttribute="height" constant="24" id="fup-Yo-sCf">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="42"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="24" id="mYf-kx-ACo">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="42"/>
+                                    </constraint>
                                 </constraints>
                                 <state key="normal" backgroundImage="icon-atras-withe"/>
                                 <connections>
                                     <action selector="arraw:" destination="eBX-uE-p2d" eventType="touchUpInside" id="NB6-MJ-oRH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gb-O3-rPC">
+                                <rect key="frame" x="243" y="491" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UNc-fj-H2u"/>
+                                    <constraint firstAttribute="height" constant="50" id="VVx-2J-RQ8"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon-mas"/>
+                                <connections>
+                                    <segue destination="mXo-sb-lKm" kind="show" id="TpN-3G-JK6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jOh-VF-RsM" firstAttribute="leading" secondItem="eR3-xi-6JN" secondAttribute="leading" id="4PI-kJ-Znl"/>
-                            <constraint firstItem="Ieo-pD-07d" firstAttribute="leading" secondItem="eR3-xi-6JN" secondAttribute="leading" constant="27" id="IRR-w1-PcW"/>
+                            <constraint firstItem="eR3-xi-6JN" firstAttribute="trailing" secondItem="2Gb-O3-rPC" secondAttribute="trailing" constant="27" id="Dlk-9j-ehZ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="72"/>
+                            </constraint>
+                            <constraint firstItem="Ieo-pD-07d" firstAttribute="leading" secondItem="eR3-xi-6JN" secondAttribute="leading" constant="27" id="IRR-w1-PcW">
+                                <variation key="heightClass=regular-widthClass=regular" constant="72"/>
+                            </constraint>
+                            <constraint firstItem="eR3-xi-6JN" firstAttribute="bottom" secondItem="2Gb-O3-rPC" secondAttribute="bottom" constant="27" id="KG3-nT-HoY">
+                                <variation key="heightClass=regular-widthClass=regular" constant="72"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="jOh-VF-RsM" secondAttribute="trailing" id="QLG-iz-Mxn"/>
-                            <constraint firstItem="Ieo-pD-07d" firstAttribute="top" secondItem="eR3-xi-6JN" secondAttribute="top" constant="27" id="d6w-7C-Tkx"/>
+                            <constraint firstItem="Ieo-pD-07d" firstAttribute="top" secondItem="eR3-xi-6JN" secondAttribute="top" constant="27" id="d6w-7C-Tkx">
+                                <variation key="heightClass=regular-widthClass=regular" constant="72"/>
+                            </constraint>
                             <constraint firstItem="jOh-VF-RsM" firstAttribute="top" secondItem="XDv-zP-8g0" secondAttribute="top" id="k9t-qI-Pvu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eR3-xi-6JN"/>
                     </view>
+                    <connections>
+                        <outlet property="listenerAddQuestion" destination="2Gb-O3-rPC" id="wgz-64-aff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nw7-9g-Je5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1858" y="-7"/>
+        </scene>
+        <!--Pincipal-->
+        <scene sceneID="FP9-cQ-H2y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pincipal" id="mXo-sb-lKm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2K-1C-8q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1975" y="529"/>
         </scene>
     </scenes>
     <resources>
@@ -218,6 +271,7 @@
         <image name="header-encuestas2" width="640" height="360"/>
         <image name="ic_cancel" width="24" height="24"/>
         <image name="icon-atras-withe" width="24" height="24"/>
+        <image name="icon-mas" width="117" height="115"/>
         <image name="user" width="256" height="256"/>
     </resources>
 </document>
