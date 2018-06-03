@@ -8,18 +8,19 @@
 
 import Foundation
 
-class Matter {
+class Matter: User {
     
+    var idMatter: String
+    var semester: String
+    var carrier: String
     var matter: String
-    var avatar: String
-    var name: String
-    var lastname: String
     
-    init(metter: String, avatar: String, name: String, lastname: String) {
-        self.matter = metter
-        self.avatar = avatar
-        self.name = name
-        self.lastname = lastname
+    init(idMatter: String, idUser: String, avatar: String, name: String, lastname: String, semester: String, carrier: String, matter: String, state: String) {
+        self.idMatter = idMatter
+        self.semester = semester
+        self.carrier = carrier
+        self.matter = matter
+        super.init(idUser: idUser, avatar: avatar, name: name, lastname: lastname, state: state)
     }
     
 }

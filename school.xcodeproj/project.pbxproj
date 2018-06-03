@@ -59,6 +59,10 @@
 		84E195F420BD05B8007222C5 /* MetterTeacherProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E195F320BD05B8007222C5 /* MetterTeacherProfileViewModel.swift */; };
 		84E195F620BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E195F520BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift */; };
 		84E195F920BD06B4007222C5 /* DataMetterTeacherProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E195F820BD06B4007222C5 /* DataMetterTeacherProfile.swift */; };
+		84FB0E9920C3854D00476269 /* Polls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FB0E9820C3854D00476269 /* Polls.storyboard */; };
+		84FB0E9C20C38ACD00476269 /* PollsListTeacherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0E9B20C38ACD00476269 /* PollsListTeacherController.swift */; };
+		84FB0E9E20C38B1600476269 /* PollsTeacherQuestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0E9D20C38B1600476269 /* PollsTeacherQuestionsController.swift */; };
+		84FB0EA020C397CA00476269 /* PollsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0E9F20C397CA00476269 /* PollsListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +144,10 @@
 		84E195F320BD05B8007222C5 /* MetterTeacherProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetterTeacherProfileViewModel.swift; sourceTree = "<group>"; };
 		84E195F520BD05C9007222C5 /* MetterTeacherProfileListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetterTeacherProfileListViewModel.swift; sourceTree = "<group>"; };
 		84E195F820BD06B4007222C5 /* DataMetterTeacherProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMetterTeacherProfile.swift; sourceTree = "<group>"; };
+		84FB0E9820C3854D00476269 /* Polls.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Polls.storyboard; sourceTree = "<group>"; };
+		84FB0E9B20C38ACD00476269 /* PollsListTeacherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsListTeacherController.swift; sourceTree = "<group>"; };
+		84FB0E9D20C38B1600476269 /* PollsTeacherQuestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsTeacherQuestionsController.swift; sourceTree = "<group>"; };
+		84FB0E9F20C397CA00476269 /* PollsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsListCell.swift; sourceTree = "<group>"; };
 		C715F8F2B302D4273A648815 /* Pods_schoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schoolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C11D05DB97CD263F8F25DF /* Pods-schoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schoolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-schoolUITests/Pods-schoolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F4E5F24390AD380B0A45F559 /* Pods_school.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_school.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +225,7 @@
 				845B7AB720B7FA1F003E8A8B /* View */,
 				849F236720B869D80044BB64 /* ViewModel */,
 				849F235C20B8588B0044BB64 /* Pincipal.storyboard */,
+				84FB0E9820C3854D00476269 /* Polls.storyboard */,
 				840DB06720B7580800A4AD84 /* Main.storyboard */,
 				840DB06320B7580800A4AD84 /* AppDelegate.swift */,
 				840DB06A20B7581000A4AD84 /* Assets.xcassets */,
@@ -247,6 +256,7 @@
 		845B7AB720B7FA1F003E8A8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84FB0E9A20C38A9E00476269 /* Polls */,
 				846A418220C1004B00528270 /* Users */,
 				849AAD6320C0A88E00BD2CCC /* EditProfile */,
 				84997DAF20BFBD56002EA7C6 /* Messenger */,
@@ -497,6 +507,16 @@
 			path = TeacherProfile;
 			sourceTree = "<group>";
 		};
+		84FB0E9A20C38A9E00476269 /* Polls */ = {
+			isa = PBXGroup;
+			children = (
+				84FB0E9B20C38ACD00476269 /* PollsListTeacherController.swift */,
+				84FB0E9D20C38B1600476269 /* PollsTeacherQuestionsController.swift */,
+				84FB0E9F20C397CA00476269 /* PollsListCell.swift */,
+			);
+			path = Polls;
+			sourceTree = "<group>";
+		};
 		BBC6C2D8D3F1D56778E2B006 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,6 +641,7 @@
 				8489316920BA61DA00330969 /* loading.json in Resources */,
 				840DB06E20B7581000A4AD84 /* LaunchScreen.storyboard in Resources */,
 				840DB06B20B7581000A4AD84 /* Assets.xcassets in Resources */,
+				84FB0E9920C3854D00476269 /* Polls.storyboard in Resources */,
 				840DB06920B7580800A4AD84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,6 +812,8 @@
 				84E195F420BD05B8007222C5 /* MetterTeacherProfileViewModel.swift in Sources */,
 				846A418420C1005B00528270 /* User.swift in Sources */,
 				8477078C20BBCB7D009DEDF1 /* MetterViewModel.swift in Sources */,
+				84FB0EA020C397CA00476269 /* PollsListCell.swift in Sources */,
+				84FB0E9E20C38B1600476269 /* PollsTeacherQuestionsController.swift in Sources */,
 				8477079820BBD3AA009DEDF1 /* DataContact.swift in Sources */,
 				849F236120B8664D0044BB64 /* TeacherController.swift in Sources */,
 				8462A96E20B936FF000D9F39 /* MatterController.swift in Sources */,
@@ -811,6 +834,7 @@
 				840DB06420B7580800A4AD84 /* AppDelegate.swift in Sources */,
 				84997DBA20BFCDF2002EA7C6 /* DataMessanger.swift in Sources */,
 				846A418120C1003D00528270 /* DataUsers.swift in Sources */,
+				84FB0E9C20C38ACD00476269 /* PollsListTeacherController.swift in Sources */,
 				845B7AB620B7F114003E8A8B /* CreateUserController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

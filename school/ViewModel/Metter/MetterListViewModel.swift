@@ -19,7 +19,7 @@ class MetterListViewModel{
     }
     
     func getMatters(){
-        let metters = self.dataMatter.getAllMatters()
+        let metters = self.dataMatter.getAllMattersFromUser()
         self.matterViewModel = metters.map{ metter in
             return MetterViewModel(metter: metter)
         }

@@ -43,7 +43,7 @@ class QualificationController: UIViewController {
     }
     
     @IBAction func dissmis(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil )
+        self.navigationController?.popViewController(animated: true)
     }
     
 

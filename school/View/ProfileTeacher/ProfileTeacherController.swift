@@ -53,7 +53,7 @@ class ProfileTeacherController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     @IBAction func arrow(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil )
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -63,7 +63,7 @@ class MessengerController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBAction func dissmis(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil )
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func changedMessage(_ sender: UITextField) {
