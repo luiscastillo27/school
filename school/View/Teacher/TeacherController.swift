@@ -19,28 +19,23 @@ class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataS
     private var dataTeacher: DataTeacher!
     private let animationView = LOTAnimationView(name: "loading")
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
-        
-//        animationView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-//        animationView.backgroundColor = UIColor.blue
-//        animationView.loopAnimation = true
-//        view.addSubview(animationView)
-//        animationView.play()
+
+        //loading mostrar y ocultar
+        //self.loading( animationView: self.animationView )
+        //animationView.isHidden = true
         
         table.delegate = self
         table.dataSource = self
         viewSearch.layer.shadowColor = UIColor.black.cgColor
         viewSearch.layer.shadowOpacity = 0.5
         viewSearch.layer.shadowOffset = CGSize.zero
-        self.table.isHidden = true
-        self.txtLoading.isHidden = false
         self.dataTeacher = DataTeacher()
         self.teacherListViewModel = TeacherListViewModel(dataTeacher: self.dataTeacher )
         DispatchQueue.main.async {
+            //self.table.isHidden = true
+            //self.txtLoading.isHidden = true
             self.table.reloadData()
         }
     }
@@ -52,6 +47,8 @@ class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.teacherListViewModel.teachersViewModel.count == 0 {
             self.txtLoading.text = "No cuentas con ningún profesor"
+            self.txtLoading.isHidden = false
+            self.table.isHidden = true
         } else {
             self.table.isHidden = false
             self.txtLoading.isHidden = true

@@ -17,6 +17,9 @@
 		840DB06E20B7581000A4AD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DB06C20B7581000A4AD84 /* LaunchScreen.storyboard */; };
 		840DB07920B7581000A4AD84 /* schoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB07820B7581000A4AD84 /* schoolTests.swift */; };
 		840DB08420B7581000A4AD84 /* schoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB08320B7581000A4AD84 /* schoolUITests.swift */; };
+		8449C53F20C3BEF900F7521B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449C53E20C3BEF900F7521B /* Reachability.swift */; };
+		8449C54220C3BF7600F7521B /* ConextionTrueFalseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449C54120C3BF7600F7521B /* ConextionTrueFalseController.swift */; };
+		8449C54420C3C79A00F7521B /* UILoadingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449C54320C3C79A00F7521B /* UILoadingUtil.swift */; };
 		845B7AB620B7F114003E8A8B /* CreateUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B7AB520B7F114003E8A8B /* CreateUserController.swift */; };
 		8462A96B20B93188000D9F39 /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462A96A20B93188000D9F39 /* ContactController.swift */; };
 		8462A96E20B936FF000D9F39 /* MatterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462A96D20B936FF000D9F39 /* MatterController.swift */; };
@@ -102,6 +105,9 @@
 		840DB07F20B7581000A4AD84 /* schoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840DB08320B7581000A4AD84 /* schoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schoolUITests.swift; sourceTree = "<group>"; };
 		840DB08520B7581000A4AD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8449C53E20C3BEF900F7521B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8449C54120C3BF7600F7521B /* ConextionTrueFalseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConextionTrueFalseController.swift; sourceTree = "<group>"; };
+		8449C54320C3C79A00F7521B /* UILoadingUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILoadingUtil.swift; sourceTree = "<group>"; };
 		845B7AB520B7F114003E8A8B /* CreateUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserController.swift; sourceTree = "<group>"; };
 		8462A96A20B93188000D9F39 /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		8462A96D20B936FF000D9F39 /* MatterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterController.swift; sourceTree = "<group>"; };
@@ -253,9 +259,18 @@
 			path = schoolUITests;
 			sourceTree = "<group>";
 		};
+		8449C54020C3BF4D00F7521B /* ConextionTrueFalse */ = {
+			isa = PBXGroup;
+			children = (
+				8449C54120C3BF7600F7521B /* ConextionTrueFalseController.swift */,
+			);
+			path = ConextionTrueFalse;
+			sourceTree = "<group>";
+		};
 		845B7AB720B7FA1F003E8A8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8449C54020C3BF4D00F7521B /* ConextionTrueFalse */,
 				84FB0E9A20C38A9E00476269 /* Polls */,
 				846A418220C1004B00528270 /* Users */,
 				849AAD6320C0A88E00BD2CCC /* EditProfile */,
@@ -468,6 +483,8 @@
 			children = (
 				849F236C20B896840044BB64 /* UIViewUtil.swift */,
 				849F237420B8A4A20044BB64 /* UIAlertUtil.swift */,
+				8449C53E20C3BEF900F7521B /* Reachability.swift */,
+				8449C54320C3C79A00F7521B /* UILoadingUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -807,14 +824,17 @@
 				8477078920BBC6B7009DEDF1 /* Matter.swift in Sources */,
 				849F236920B869F80044BB64 /* TeacherListViewModel.swift in Sources */,
 				8477079020BBD19B009DEDF1 /* Contact.swift in Sources */,
+				8449C54420C3C79A00F7521B /* UILoadingUtil.swift in Sources */,
 				84E195F120BD053A007222C5 /* MetterTeacherProfile.swift in Sources */,
 				849F235F20B864860044BB64 /* TeachersCell.swift in Sources */,
 				84E195F420BD05B8007222C5 /* MetterTeacherProfileViewModel.swift in Sources */,
 				846A418420C1005B00528270 /* User.swift in Sources */,
 				8477078C20BBCB7D009DEDF1 /* MetterViewModel.swift in Sources */,
 				84FB0EA020C397CA00476269 /* PollsListCell.swift in Sources */,
+				8449C54220C3BF7600F7521B /* ConextionTrueFalseController.swift in Sources */,
 				84FB0E9E20C38B1600476269 /* PollsTeacherQuestionsController.swift in Sources */,
 				8477079820BBD3AA009DEDF1 /* DataContact.swift in Sources */,
+				8449C53F20C3BEF900F7521B /* Reachability.swift in Sources */,
 				849F236120B8664D0044BB64 /* TeacherController.swift in Sources */,
 				8462A96E20B936FF000D9F39 /* MatterController.swift in Sources */,
 				849AAD6720C0BA7000BD2CCC /* MessengerTransmitterCell.swift in Sources */,

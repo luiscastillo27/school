@@ -9,43 +9,31 @@
 import Foundation
 import UIKit
 
-protocol AlertProtocol {
-    func actionAcept( this: UIViewController, acept: String? )
-    func actionCancel( this: UIViewController, cancel: String? )
-}
 
-class UiAlert {
+extension UIViewController {
 
-    public func alertSimple( this: UIViewController, titileAlert: String?, bodyAlert: String?, actionAlert: String? ) -> Void {
+    
+    func alertSimple( this: UIViewController, titileAlert: String?, bodyAlert: String?, complete: @escaping ((String) -> Void)) {
         let alert = UIAlertController(title: titileAlert, message: bodyAlert, preferredStyle: .alert);
         let acept = UIAlertAction(title: "Aceptar", style: .default, handler: { (action) in
-            self.actionAcept( this:this, acept: actionAlert )
+            complete("acept")
         })
         alert.addAction(acept);
         this.present(alert, animated: true, completion: nil);
     }
     
-    public func alertAvanced( this: UIViewController, titileAlert: String?, bodyAlert: String?, actionAcept: String?, cancelAlert: String? ) -> Void {
+    func alertAvanced( this: UIViewController, titileAlert: String?, bodyAlert: String?, complete: @escaping ((String) -> Void)) {
         let alert = UIAlertController(title: titileAlert, message: bodyAlert, preferredStyle: .alert);
         let acept = UIAlertAction(title: "Aceptar", style: .default, handler: { (action) in
-            self.actionAcept( this:this, acept: actionAcept )
+            complete("acept")
         })
         let cancel = UIAlertAction(title: "Cancelar", style: .default, handler: { (action) in
-            self.actionCancel( this:this, cancel: cancelAlert )
+            complete("cancel")
         })
         alert.addAction(acept);
         alert.addAction(cancel);
         this.present(alert, animated: true, completion: nil);
-    }
-    
-    
-    func actionAcept(this: UIViewController, acept: String?) {
-        
-    }
-    
-    func actionCancel(this: UIViewController, cancel: String?) {
-        
-    }
 
+    }
     
 }

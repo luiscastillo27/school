@@ -144,7 +144,7 @@
                         <constraints>
                             <constraint firstItem="3ai-OS-a3O" firstAttribute="leading" secondItem="jZC-wV-ueL" secondAttribute="leading" id="AlG-CG-mOv"/>
                             <constraint firstItem="tdj-qt-3Xj" firstAttribute="top" secondItem="jZC-wV-ueL" secondAttribute="top" constant="100" id="Bmk-Kh-KvP">
-                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
                             <constraint firstItem="3ai-OS-a3O" firstAttribute="top" secondItem="tdj-qt-3Xj" secondAttribute="bottom" constant="8" id="C83-6o-vEW"/>
                             <constraint firstItem="uBD-Hs-P5x" firstAttribute="trailing" secondItem="jZC-wV-ueL" secondAttribute="trailing" id="CoS-PF-rX0"/>
@@ -556,7 +556,7 @@
                         <constraints>
                             <constraint firstItem="kQ4-KL-bjc" firstAttribute="top" secondItem="lt7-sx-Jrv" secondAttribute="top" id="0RS-AW-fWn"/>
                             <constraint firstItem="M6b-Hl-OQq" firstAttribute="top" secondItem="YLy-zp-DJw" secondAttribute="top" constant="100" id="CMT-06-bSI">
-                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
                             <constraint firstItem="PGF-gc-RWu" firstAttribute="top" secondItem="M6b-Hl-OQq" secondAttribute="bottom" constant="8" id="IVy-aA-WIL"/>
                             <constraint firstItem="YLy-zp-DJw" firstAttribute="trailing" secondItem="M6b-Hl-OQq" secondAttribute="trailing" constant="27" id="OYz-lp-DwO">
@@ -1157,13 +1157,19 @@
                             </constraint>
                             <constraint firstItem="CFu-CF-pLc" firstAttribute="leading" secondItem="EZY-HJ-msb" secondAttribute="leading" id="EuV-jL-6Gt"/>
                             <constraint firstItem="CFu-CF-pLc" firstAttribute="top" secondItem="8AL-xy-PDM" secondAttribute="top" id="RLM-F0-8mp"/>
-                            <constraint firstItem="K0y-qw-Vk3" firstAttribute="top" secondItem="sk9-hZ-Y2V" secondAttribute="bottom" constant="11" id="h4b-gz-VVO"/>
+                            <constraint firstItem="K0y-qw-Vk3" firstAttribute="top" secondItem="sk9-hZ-Y2V" secondAttribute="bottom" constant="11" id="h4b-gz-VVO">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="CFu-CF-pLc" secondAttribute="trailing" id="mJH-ao-B2M"/>
-                            <constraint firstItem="EZY-HJ-msb" firstAttribute="trailing" secondItem="K0y-qw-Vk3" secondAttribute="trailing" constant="27" id="oxH-ne-b5n"/>
+                            <constraint firstItem="EZY-HJ-msb" firstAttribute="trailing" secondItem="K0y-qw-Vk3" secondAttribute="trailing" constant="27" id="oxH-ne-b5n">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="sk9-hZ-Y2V" firstAttribute="top" secondItem="EZY-HJ-msb" secondAttribute="top" constant="27" id="tIj-Hi-Cw1">
                                 <variation key="heightClass=regular-widthClass=regular" constant="72"/>
                             </constraint>
-                            <constraint firstItem="K0y-qw-Vk3" firstAttribute="leading" secondItem="EZY-HJ-msb" secondAttribute="leading" constant="27" id="ylj-bf-1HB"/>
+                            <constraint firstItem="K0y-qw-Vk3" firstAttribute="leading" secondItem="EZY-HJ-msb" secondAttribute="leading" constant="27" id="ylj-bf-1HB">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EZY-HJ-msb"/>
                     </view>
@@ -1298,7 +1304,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="83X-jZ-fsB" secondAttribute="trailing" id="1hd-Jb-yis"/>
                             <constraint firstItem="9wt-yk-cxC" firstAttribute="top" secondItem="QwI-cU-3j4" secondAttribute="top" constant="100" id="Mcv-fg-PE3">
-                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
                             <constraint firstItem="sfp-gw-fa3" firstAttribute="trailing" secondItem="QwI-cU-3j4" secondAttribute="trailing" id="NdW-rJ-2rk"/>
                             <constraint firstItem="sfp-gw-fa3" firstAttribute="leading" secondItem="QwI-cU-3j4" secondAttribute="leading" id="PRy-V8-to0"/>
@@ -1461,7 +1467,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="rAs-cj-WMs" kind="show" id="68h-1S-71K"/>
+                                    <action selector="exit:" destination="KuW-ZF-bCk" eventType="touchUpInside" id="NIv-Qf-rS3"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-edit-profile" translatesAutoresizingMaskIntoConstraints="NO" id="xdZ-Ra-PSU">
@@ -1512,7 +1518,7 @@
                             </constraint>
                             <constraint firstItem="De5-VB-pxU" firstAttribute="leading" secondItem="GKP-ad-fi8" secondAttribute="leading" constant="45" id="weQ-li-ke1"/>
                             <constraint firstItem="ArB-8Q-HnQ" firstAttribute="top" secondItem="GKP-ad-fi8" secondAttribute="top" constant="100" id="zUe-K9-TYg">
-                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GKP-ad-fi8"/>
@@ -1523,6 +1529,7 @@
                         <outlet property="cardViewTitle" destination="ArB-8Q-HnQ" id="GCY-kg-c19"/>
                         <outlet property="listenerEditUser" destination="Et1-CG-Tbo" id="0Ts-0k-kXf"/>
                         <outlet property="listenerExit" destination="PFQ-1O-eLZ" id="xzA-u6-gcS"/>
+                        <segue destination="rAs-cj-WMs" kind="show" identifier="goLogin" id="0g6-aG-hJr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMs-bF-pwf" userLabel="First Responder" sceneMemberID="firstResponder"/>

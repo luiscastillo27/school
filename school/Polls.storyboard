@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="34e-0S-AoN">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,24 +17,24 @@
                 <viewControllerPlaceholder storyboardName="Main" id="Dwm-pr-OBz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWk-eZ-m0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="518"/>
+            <point key="canvasLocation" x="647" y="465"/>
         </scene>
         <!--Polls List Teacher Controller-->
         <scene sceneID="2by-G6-RIo">
             <objects>
                 <viewController id="34e-0S-AoN" customClass="PollsListTeacherController" customModule="school" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Day-fJ-xHo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-encuestas2" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ8-d4-avL">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="408"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZJ8-d4-avL" secondAttribute="height" multiplier="322:171" id="uOJ-Uu-0pd"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubO-4b-8XR">
-                                <rect key="frame" x="27" y="47" width="24" height="24"/>
+                                <rect key="frame" x="72" y="92" width="42" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="KjD-5I-IQo">
                                         <variation key="heightClass=regular-widthClass=regular" constant="42"/>
@@ -45,14 +45,14 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="ic_cancel"/>
                                 <connections>
-                                    <segue destination="Dwm-pr-OBz" kind="show" id="EPX-Ot-EWJ"/>
+                                    <action selector="clouse:" destination="34e-0S-AoN" eventType="touchUpInside" id="KPV-Bj-wBr"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnV-go-fpD">
-                                <rect key="frame" x="27" y="86" width="266" height="60"/>
+                                <rect key="frame" x="150" y="284" width="468" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis materias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inS-15-Vol">
-                                        <rect key="frame" x="10" y="0.0" width="246" height="60"/>
+                                        <rect key="frame" x="10" y="0.0" width="448" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -73,19 +73,19 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Eb-uv-bjJ">
-                                <rect key="frame" x="0.0" y="166" width="320" height="402"/>
+                                <rect key="frame" x="0.0" y="364" width="768" height="660"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Z8h-ww-iLo" customClass="PollsListCell" customModule="school" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="768" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z8h-ww-iLo" id="n1Y-FO-iQ9">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6h-Df-wCY" userLabel="item">
-                                                    <rect key="frame" x="27" y="8" width="266" height="64"/>
+                                                    <rect key="frame" x="150.5" y="8" width="123.5" height="64"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="EEO-El-D85">
                                                             <rect key="frame" x="9" y="10" width="45" height="45"/>
@@ -95,13 +95,13 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Manuel Castillo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9j-Zg-vET">
-                                                            <rect key="frame" x="62" y="10" width="194" height="20"/>
+                                                            <rect key="frame" x="62" y="10" width="144.5" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Materia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZS-C5-AD3">
-                                                            <rect key="frame" x="62" y="34" width="194" height="18"/>
+                                                            <rect key="frame" x="62" y="34" width="51.5" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -147,14 +147,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6R-yj-lxV">
+                                <rect key="frame" x="717" y="47" width="24" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="bCh-JU-Jrt"/>
+                                    <constraint firstAttribute="height" constant="24" id="tG0-Vo-8hX"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon-mas"/>
+                                <connections>
+                                    <segue destination="mXo-sb-lKm" kind="show" id="xZ9-IA-2hZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3Eb-uv-bjJ" firstAttribute="top" secondItem="lnV-go-fpD" secondAttribute="bottom" constant="20" id="3kR-UU-kQ9"/>
                             <constraint firstItem="GbV-is-Hc2" firstAttribute="trailing" secondItem="3Eb-uv-bjJ" secondAttribute="trailing" id="8gf-al-KNu"/>
+                            <constraint firstItem="d6R-yj-lxV" firstAttribute="top" secondItem="GbV-is-Hc2" secondAttribute="top" constant="27" id="CWN-od-dhk"/>
                             <constraint firstItem="GbV-is-Hc2" firstAttribute="trailing" secondItem="lnV-go-fpD" secondAttribute="trailing" constant="27" id="D49-qy-bXn">
                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
+                            <constraint firstItem="GbV-is-Hc2" firstAttribute="trailing" secondItem="d6R-yj-lxV" secondAttribute="trailing" constant="27" id="DXG-UD-snJ"/>
                             <constraint firstItem="3Eb-uv-bjJ" firstAttribute="leading" secondItem="GbV-is-Hc2" secondAttribute="leading" id="Fda-mc-naR"/>
                             <constraint firstItem="lnV-go-fpD" firstAttribute="leading" secondItem="GbV-is-Hc2" secondAttribute="leading" constant="27" id="JEE-Ax-FKa">
                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
@@ -172,6 +185,7 @@
                             <constraint firstItem="lnV-go-fpD" firstAttribute="top" secondItem="ubO-4b-8XR" secondAttribute="bottom" constant="15" id="nWp-8e-Vss">
                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
+                            <constraint firstItem="lnV-go-fpD" firstAttribute="top" secondItem="d6R-yj-lxV" secondAttribute="bottom" constant="15" id="z16-rB-VXl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GbV-is-Hc2"/>
                     </view>
@@ -180,8 +194,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cardView" destination="lnV-go-fpD" id="9rr-2g-bau"/>
+                        <outlet property="listenerFinish" destination="d6R-yj-lxV" id="Gbx-Zi-ceW"/>
                         <outlet property="table" destination="3Eb-uv-bjJ" id="0Xn-2w-Gba"/>
                         <segue destination="eBX-uE-p2d" kind="show" identifier="goQuestion" id="WDP-Q2-51p"/>
+                        <segue destination="Dwm-pr-OBz" kind="show" identifier="goLogin" id="fGt-bh-ysK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qe9-GH-0pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -193,17 +209,17 @@
             <objects>
                 <viewController id="eBX-uE-p2d" customClass="PollsTeacherQuestionsController" customModule="school" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDv-zP-8g0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-encuestas" translatesAutoresizingMaskIntoConstraints="NO" id="jOh-VF-RsM">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="408"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jOh-VF-RsM" secondAttribute="height" multiplier="322:171" id="zkZ-eZ-I4b"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieo-pD-07d">
-                                <rect key="frame" x="27" y="47" width="24" height="24"/>
+                                <rect key="frame" x="72" y="92" width="42" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="fup-Yo-sCf">
                                         <variation key="heightClass=regular-widthClass=regular" constant="42"/>
@@ -218,14 +234,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gb-O3-rPC">
-                                <rect key="frame" x="243" y="491" width="50" height="50"/>
+                                <rect key="frame" x="646" y="902" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="UNc-fj-H2u"/>
                                     <constraint firstAttribute="height" constant="50" id="VVx-2J-RQ8"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="icon-mas"/>
                                 <connections>
-                                    <segue destination="mXo-sb-lKm" kind="show" id="TpN-3G-JK6"/>
+                                    <action selector="addAsnweres:" destination="eBX-uE-p2d" eventType="touchUpInside" id="Zdg-xG-FyA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -260,10 +276,10 @@
         <!--Pincipal-->
         <scene sceneID="FP9-cQ-H2y">
             <objects>
-                <viewControllerPlaceholder storyboardName="Pincipal" id="mXo-sb-lKm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2K-1C-8q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Pincipal" id="mXo-sb-lKm" sceneMemberID="viewController"/>
             </objects>
-            <point key="canvasLocation" x="1975" y="529"/>
+            <point key="canvasLocation" x="1114" y="465"/>
         </scene>
     </scenes>
     <resources>

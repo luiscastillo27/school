@@ -14,6 +14,7 @@ class PollsListTeacherController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var cardView: UIView!
     private var teacherListViewModel: TeacherListViewModel!
     private var dataTeacher: DataTeacher!
+    @IBOutlet weak var listenerFinish: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,5 +59,14 @@ class PollsListTeacherController: UIViewController, UITableViewDelegate, UITable
             }
         }
     }
-
+    
+    
+    @IBAction func clouse(_ sender: UIButton) {
+        self.alertAvanced(this: self, titileAlert: "Salir de la encuesta", bodyAlert: "¿Estás seguro de salir de las encuestas?") { resp in
+            if resp == "acept" {
+                self.performSegue(withIdentifier: "goLogin", sender: self )
+            }
+        }
+    }
+    
 }

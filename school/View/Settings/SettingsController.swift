@@ -35,18 +35,17 @@ class SettingsController: UIViewController {
         listenerExit.layer.shadowOffset = CGSize.zero
     }
 
+    @IBAction func exit(_ sender: UIButton) {
+        self.alertAvanced(this: self, titileAlert: "Cerrar sesión", bodyAlert: "¿Estás seguro de cerrar tu sesión?") { resp in
+            if resp == "acept" {
+                self.performSegue(withIdentifier: "goLogin", sender: self )
+            }
+        }
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

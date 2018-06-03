@@ -12,6 +12,7 @@ class PollsTeacherQuestionsController: UIViewController {
 
     @IBOutlet weak var listenerAddQuestion: UIButton!
     public var selectedTeacherViewModel: TeacherViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,14 +22,13 @@ class PollsTeacherQuestionsController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func addAsnweres(_ sender: UIButton) {
+        self.alertAvanced(this: self, titileAlert: "Confirmar respuestas", bodyAlert: "¿Estás seguro agregar estas respuestas?") { resp in
+            if resp == "acept" {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
-    */
+    
 
 }
