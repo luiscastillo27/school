@@ -13,8 +13,8 @@ class DataMessanger {
     public var messages: [Messager] = [Messager]()
     
     func getAllMessages() -> [Messager]{
-        messages.append( Messager(id: "1", message: "Hola bb", date: "27/03/15", transmitter: "Luis Castillo", receiver: "Ana Mireya"))
-        messages.append( Messager(id: "1", message: "Como estas princesa jim", date: "27/03/15", transmitter: "Ana Mireya", receiver: "Luis Castillo"))
+        messages.append( Messager(idMessage: "1", message: "Hola bb", date: "27/03/15", hour: "01:27:15", transmitter: "Luis Castillo", receiver: "Ana Mireya"))
+        messages.append( Messager(idMessage: "1", message: "Como estas princesa jim", date: "27/03/15", hour: "01:27:18schedules", transmitter: "Ana Mireya", receiver: "Luis Castillo"))
         return messages
     }
     

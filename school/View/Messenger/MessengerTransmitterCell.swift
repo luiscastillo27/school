@@ -11,9 +11,11 @@ import UIKit
 class MessengerTransmitterCell: UITableViewCell {
 
     @IBOutlet weak var txtTransmitter: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        txtTransmitter.layer.cornerRadius = 5.0
+        txtTransmitter.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -17,6 +17,9 @@
 		840DB06E20B7581000A4AD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DB06C20B7581000A4AD84 /* LaunchScreen.storyboard */; };
 		840DB07920B7581000A4AD84 /* schoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB07820B7581000A4AD84 /* schoolTests.swift */; };
 		840DB08420B7581000A4AD84 /* schoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DB08320B7581000A4AD84 /* schoolUITests.swift */; };
+		844739A420C4F30B00A7CB9C /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844739A320C4F30B00A7CB9C /* Student.swift */; };
+		844739A620C4F55900A7CB9C /* Qualification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844739A520C4F55900A7CB9C /* Qualification.swift */; };
+		844739A920C4FD5200A7CB9C /* Schedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844739A820C4FD5200A7CB9C /* Schedules.swift */; };
 		8449C53F20C3BEF900F7521B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449C53E20C3BEF900F7521B /* Reachability.swift */; };
 		8449C54220C3BF7600F7521B /* ConextionTrueFalseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449C54120C3BF7600F7521B /* ConextionTrueFalseController.swift */; };
 		8449C54420C3C79A00F7521B /* UILoadingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449C54320C3C79A00F7521B /* UILoadingUtil.swift */; };
@@ -105,6 +108,9 @@
 		840DB07F20B7581000A4AD84 /* schoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840DB08320B7581000A4AD84 /* schoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schoolUITests.swift; sourceTree = "<group>"; };
 		840DB08520B7581000A4AD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844739A320C4F30B00A7CB9C /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		844739A520C4F55900A7CB9C /* Qualification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qualification.swift; sourceTree = "<group>"; };
+		844739A820C4FD5200A7CB9C /* Schedules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedules.swift; sourceTree = "<group>"; };
 		8449C53E20C3BEF900F7521B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		8449C54120C3BF7600F7521B /* ConextionTrueFalseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConextionTrueFalseController.swift; sourceTree = "<group>"; };
 		8449C54320C3C79A00F7521B /* UILoadingUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILoadingUtil.swift; sourceTree = "<group>"; };
@@ -259,6 +265,22 @@
 			path = schoolUITests;
 			sourceTree = "<group>";
 		};
+		844739A220C4F2D100A7CB9C /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				844739A320C4F30B00A7CB9C /* Student.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		844739A720C4FD3A00A7CB9C /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				844739A820C4FD5200A7CB9C /* Schedules.swift */,
+			);
+			path = Schedules;
+			sourceTree = "<group>";
+		};
 		8449C54020C3BF4D00F7521B /* ConextionTrueFalse */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +292,8 @@
 		845B7AB720B7FA1F003E8A8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				844739A720C4FD3A00A7CB9C /* Schedules */,
+				844739A220C4F2D100A7CB9C /* Student */,
 				8449C54020C3BF4D00F7521B /* ConextionTrueFalse */,
 				84FB0E9A20C38A9E00476269 /* Polls */,
 				846A418220C1004B00528270 /* Users */,
@@ -361,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				847D588520BF8FED00867F49 /* QualificationController.swift */,
+				844739A520C4F55900A7CB9C /* Qualification.swift */,
 			);
 			path = Qualification;
 			sourceTree = "<group>";
@@ -835,12 +860,15 @@
 				84FB0E9E20C38B1600476269 /* PollsTeacherQuestionsController.swift in Sources */,
 				8477079820BBD3AA009DEDF1 /* DataContact.swift in Sources */,
 				8449C53F20C3BEF900F7521B /* Reachability.swift in Sources */,
+				844739A620C4F55900A7CB9C /* Qualification.swift in Sources */,
 				849F236120B8664D0044BB64 /* TeacherController.swift in Sources */,
 				8462A96E20B936FF000D9F39 /* MatterController.swift in Sources */,
 				849AAD6720C0BA7000BD2CCC /* MessengerTransmitterCell.swift in Sources */,
 				8489316B20BBB28000330969 /* MetterCell.swift in Sources */,
 				8489316D20BBB4E900330969 /* ContactCell.swift in Sources */,
+				844739A420C4F30B00A7CB9C /* Student.swift in Sources */,
 				849F236D20B896840044BB64 /* UIViewUtil.swift in Sources */,
+				844739A920C4FD5200A7CB9C /* Schedules.swift in Sources */,
 				849F236B20B86A250044BB64 /* TeacherViewModel.swift in Sources */,
 				849F236320B867150044BB64 /* Teacher.swift in Sources */,
 				84997DB720BFCCDD002EA7C6 /* Messager.swift in Sources */,

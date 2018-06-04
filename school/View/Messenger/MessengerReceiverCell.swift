@@ -14,7 +14,8 @@ class MessengerReceiverCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        txtReceiver.layer.cornerRadius = 5.0
+        txtReceiver.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

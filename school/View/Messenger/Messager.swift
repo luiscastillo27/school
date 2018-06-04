@@ -10,16 +10,18 @@ import Foundation
 
 class Messager {
     
-    var id: String
+    var idMessage: String
     var message: String
     var date: String
+    var hour: String
     var transmitter: String
     var receiver: String
     
-    init(id: String, message: String, date: String, transmitter: String, receiver: String) {
-        self.id = id
+    init(idMessage: String, message: String, date: String, hour: String, transmitter: String, receiver: String) {
+        self.idMessage = idMessage
         self.message = message
         self.date = date
+        self.hour = hour
         self.transmitter = transmitter
         self.receiver = receiver
     }

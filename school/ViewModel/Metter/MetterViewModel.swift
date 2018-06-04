@@ -15,12 +15,11 @@ class MetterViewModel {
     var name: String
     var lastname: String
     
-    
     init(metter: Matter) {
-        self.matter = metter.name
-        self.avatar = metter.avatar
-        self.name = metter.name
-        self.lastname = metter.lastname
+        self.matter = metter.matter
+        self.avatar = metter.avatar!
+        self.name = metter.name!
+        self.lastname = metter.lastname!
     }
     
 }

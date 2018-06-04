@@ -11,10 +11,10 @@ import Foundation
 class User {
     
     public var idUser: String
-    public var avatar: String
-    public var name: String
-    public var lastname: String
-    public var state: String
+    public var avatar: String?
+    public var name: String?
+    public var lastname: String?
+    public var state: String?
     
     public var email: String?
     public var password: String?
@@ -37,6 +37,10 @@ class User {
         self.name = name
         self.lastname = lastname
         self.state = state
+    }
+    
+    init(idUser: String){
+        self.idUser = idUser
     }
     
 }

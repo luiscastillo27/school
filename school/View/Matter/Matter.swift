@@ -22,5 +22,6 @@ class Matter: User {
         self.matter = matter
         super.init(idUser: idUser, avatar: avatar, name: name, lastname: lastname, state: state)
     }
+
     
 }

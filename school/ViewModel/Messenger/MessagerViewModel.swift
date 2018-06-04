@@ -10,14 +10,14 @@ import Foundation
 
 class MessagerViewModel {
     
-    var id: String
+    var idMessage: String
     var message: String
     var date: String
     var transmitter: String
     var receiver: String
     
     init(msn: Messager) {
-        self.id = msn.id
+        self.idMessage = msn.idMessage
         self.message = msn.message
         self.date = msn.date
         self.transmitter = msn.transmitter
