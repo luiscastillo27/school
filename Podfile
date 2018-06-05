@@ -19,8 +19,8 @@ target 'school' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'NVActivityIndicatorView'
-  #pod 'RxSwift' 
-  #pod 'RxCocoa' 
+  pod 'RxSwift' 
+  pod 'RxCocoa' 
 
   target 'schoolTests' do
     inherit! :search_paths
