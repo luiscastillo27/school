@@ -7,10 +7,11 @@
 //
 
 import UIKit
+
 import RevealingSplashView
 
 class LoginController: UIViewController {
-
+    
     let revealingSplashView = RevealingSplashView(
         iconImage: UIImage(named: "icon-sanus")!,
         iconInitialSize: CGSize(width: 161, height: 127),

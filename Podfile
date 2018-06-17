@@ -21,6 +21,7 @@ target 'school' do
   pod 'NVActivityIndicatorView'
   pod 'RxSwift' 
   pod 'RxCocoa' 
+  pod 'Socket.IO-Client-Swift'
 
   target 'schoolTests' do
     inherit! :search_paths

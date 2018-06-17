@@ -8,6 +8,7 @@
 
 import UIKit
 import Lottie
+import SocketIO
 
 class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -25,6 +26,10 @@ class TeacherController: UIViewController, UITableViewDelegate, UITableViewDataS
         //loading mostrar y ocultar
         //self.loading( animationView: self.animationView )
         //animationView.isHidden = true
+        
+        let manager = SocketManager(socketURL: URL(string: "http://192.168.0.104:2715")!, config: [.log(true), .compress])
+        let socket = manager.defaultSocket
+        socket.connect()
         
         table.delegate = self
         table.dataSource = self
