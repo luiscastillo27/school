@@ -18,10 +18,10 @@ target 'school' do
   pod 'RevealingSplashView'
   pod 'SwiftyJSON'
   pod 'Alamofire'
-  pod 'NVActivityIndicatorView'
   pod 'RxSwift' 
   pod 'RxCocoa' 
   pod 'Socket.IO-Client-Swift'
+  pod 'KeychainItemWrapper'
 
   target 'schoolTests' do
     inherit! :search_paths
